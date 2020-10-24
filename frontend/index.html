@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integración Frontend y Backend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Integración Frontend y Backend</h1>
+
+    <div id="div-formulario">
+
+        <form action="">
+
+            <!-- Primera fila. Introducir ID + Buscar producto -->
+            <label id="labId" for="id">ID:</label>
+            <div id="divBuscar">
+                <input type="number" name="id" id="id" placeholder="Introduce id">
+                <button id="botonBuscar">Buscar producto</button>
+            </div>
+
+
+            <!-- Segunda fila. Introducir Título -->
+            <label id="labTitle" for="title">Title:</label>
+            <input type="text" name="title" id="title" placeholder="Introduce título">
+
+
+            <!-- Tercera fila. Introducir Categoría -->
+            <label id="labCategory" for="category">Category:</label>
+            <select required name="category" id="selectCategory">
+                <option disabled selected value>Selecciona una opción</option>
+            </select>
+
+
+            <!-- Cuarta fila. Introducir Tipo de contenido -->
+            <label id="labTipeContent" for="tipeContent">Tipo de contenido:</label>
+            <select required name="tipeContent" id="selectTipeContent">
+                <option disabled selected value>Selecciona una opción</option>
+                <option value="MOVIE">Película</option>
+                <option value="SERIE">Serie</option>
+            </select>
+
+
+            <!-- Quinta fila. Introducir Tipo de suscripción -->
+            <label id="labTipeSuscription" for="tipeSuscription">Tipo de suscripción:</label>
+            <select required name="tipeSuscription" id="selectTipeSuscription">
+                <option disabled selected value>Selecciona una opción</option>
+                <option value="BASIC">Básica</option>
+                <option value="PREMIUM">Premium</option>
+            </select>
+
+        </form>
+
+    </div>
+
+
+    <!-- Botones para interactuar con el formulario -->
+    <div id="divBotones">
+        <button id="botonListado">Mostrar listado</button>
+        <button id="botonCrearProducto">Crear producto</button>
+        <button id="botonReset">Reset</button>
+    </div>
+
+
+    <!-- Tabla que mostrará el listado de productos -->
+    <div id="divTablaListado">
+        <table id="tablaListado" class="oculto">
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Tipe content</th>
+                <th>Tipe suscription</th>
+            </tr>
+        </table>
+    </div>
+
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
