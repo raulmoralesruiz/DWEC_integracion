@@ -31,11 +31,12 @@ Para utilizar la aplicación web, primero debemos descargar los entornos backend
 
         Tras importar el proyecto, iniciamos el servidor desde el apartado "Boot Dashboard" (normalmente ubicado en la parte inferior izquieda.)
 
-        Desplegamos el botón "local" -> click botón derecho sobre "backend" -> click sobre start
+        Desplegamos el botón "local" -> click botón derecho sobre "jacaranda" -> click sobre start
 
 ### Frontend
 
 - Acceso al apartado web.
+
         Abrimos el fichero "index.html", ubicado en la carpeta "frontend", utilizando cualquier navegador.
 
 ## Funciones disponibles
